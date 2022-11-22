@@ -10,13 +10,6 @@
 
 P.S.: Способ хранения макетов писем и списков подписчиков на усмотрение исполнителя.
 
-
-Склонировать репозиторий с Github:
-git clone git@github.com:Witaly3/notification_service.git
-
-Скачиваем необходимые
-запускаем: сервер python manage.py runserver
-           селери ;python -m celery -A mailing_app worker -B --loglevel=info
            
            
 1. Склонировать репозиторий с Github:
