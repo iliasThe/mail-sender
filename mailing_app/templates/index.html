@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<h1>Hello, django mailing!</h1>
+
+
+<form action="{% url 'send' %}">
+    <input type="submit"
+           value="Send Mail to {{amount_subscribers}} subscribers" />
+</form>
+
+<form action="{% url 'index' %}">
+    <input type="submit" value="Check now!" />
+</form>
+
+<ul>
+{% for sub in subscribers %}
+    <h5>{{sub.0}}</h5>
+    <ul>
+        <h5>{{sub.1}}</h5>
+    </ul>
+{% endfor %}
+</ul>
+
+</body>
+</html>
